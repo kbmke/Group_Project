@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --footerBG: var(#323233);
-}
-
 body {
-    background-color: #323233
-}
-
-footer {
-    background-color: (--footerBG);
+    background-color: var(#323233);
 }
