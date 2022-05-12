@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --charcoal: #323233;
+}
+
 body {
-    background-color: #323233;
+    background-color: var(--charcoal);
 }
