@@ -4,6 +4,82 @@
     box-sizing: border-box;
 }
 
+
+/*header*/
+
+header {}
+
+
+/* header unordered list */
+
+header ul li {}
+
+
+/* logo in the header */
+
+.logo {}
+
 body {
     background-color: #323233;
 }
+
+
+/* main container div */
+
+.main {}
+
+
+/* main picture div */
+
+.main.picture img {}
+
+
+/* about div */
+
+.about {}
+
+
+/* about pic div */
+
+.about.pic img {}
+
+
+/* about div with words */
+
+.about p {}
+
+
+/* events div with words */
+
+.events img {}
+
+
+/* feedback div with pic */
+
+.feedback img {}
+
+
+/* feed back with words */
+
+.feedback p {}
+
+
+/* footer */
+
+footer {}
+
+
+/*phone number in the footer */
+
+
+/* todo  */
+
+
+/* address in the footer  */
+
+footer address {}
+
+
+/* div for the hours  */
+
+div.hours {}
