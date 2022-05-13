@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --footerbg:
+}
+
 
 /*header*/
 
@@ -12,7 +16,9 @@ header {}
 
 /* header unordered list */
 
-header ul li {}
+header ul {
+    list-style: none;
+}
 
 
 /* logo in the header */
