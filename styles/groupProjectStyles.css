@@ -41,15 +41,10 @@ header ul {
 
 /* logo in the header */
 
-.header .logo {
+.logo img {
     width: 6rem;
     border-radius: 100%;
 }
-
-
-/* logo in the header */
-
-.logo {}
 
 body {
     background-color: var(--offwhite);
@@ -109,7 +104,7 @@ footer {
 /*phone number in the footer */
 
 
-/* todo  */
+/* todo */
 
 
 /* address in the footer  */
