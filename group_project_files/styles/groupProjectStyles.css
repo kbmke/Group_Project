@@ -9,6 +9,11 @@
     --seafoam: #b4f4e5;
     --offwhite: rgb(251, 246, 246);
     --orange: rgba(255, 166, 0, 0.817);
+    --white: white;
+}
+
+header {
+    background-color: var(--white);
 }
 
 body {
