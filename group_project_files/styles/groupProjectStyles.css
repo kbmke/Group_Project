@@ -80,6 +80,11 @@ footer {}
 footer address {}
 
 
-/* div for the hours  */
+/* div for the hours in the footer */
 
-div.hours {}
+.hours {}
+
+
+/* div for the copyright icon in the footer */
+
+.copyright {}
