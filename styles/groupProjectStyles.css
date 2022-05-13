@@ -5,40 +5,118 @@
 }
 
 :root {
+    --footerBottomBG: #323233;
+    --footerTopBG: #b4f4e5;
+    --headerBG: rgb(251, 246, 246);
     --charcoal: #323233;
     --seafoam: #b4f4e5;
     --offwhite: rgb(251, 246, 246);
     --orange: rgba(255, 166, 0, 0.817);
     --white: white;
+    font-size: 10px;
+    display: grid;
+    /* todo I messed up the numbers in the temp below so will need to fix it later  */
+    grid-template-columns: 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%;
+    grid-template-rows: 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%;
 }
+
+
+/*header*/
 
 header {
     background-color: var(--white);
+    font-size: 1.5rem;
+    border: 1px solid black;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    font-size: 16px;
-    background-color: var(--offwhite);
-}
 
-.main {
-    display: grid;
-}
+/* header unordered list */
 
-header {
-    font-size: 16px;
-}
-
-.header ul {
+header ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    line-height: 2;
 }
 
-footer {
-    font-size: 16px;
-    background-color: var(--charcoal);
+
+/* logo in the header */
+
+.logo img {
+    width: 6rem;
+    border-radius: 100%;
 }
+
+body {
+    background-color: var(--offwhite);
+}
+
+
+/* main container div */
+
+.main {}
+
+
+/* main picture div */
+
+#tblpies {
+    width: 30%;
+    display: grid;
+}
+
+
+/* about div */
+
+.about {}
+
+
+/* about pic div */
+
+.about.pic img {}
+
+
+/* about div with words */
+
+.about p {}
+
+
+/* events div with words */
+
+.events img {}
+
+
+/* feedback div with pic */
+
+.feedback img {}
+
+
+/* feed back with words */
+
+.feedback p {}
+
+
+/* footer */
+
+footer {
+    background-color: var(--footerTopBG);
+}
+
+
+/*phone number in the footer */
+
+
+/* todo */
+
+
+/* address in the footer  */
+
+footer address {}
+
+
+/* div for the hours in the footer */
+
+.hours {}
+
+
+/* div for the copyright icon in the footer */
+
+.copyright {}
