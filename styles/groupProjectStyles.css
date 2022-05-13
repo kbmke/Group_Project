@@ -5,19 +5,35 @@
 }
 
 :root {
-    --footerbg:
+    --footerBottomBG: #323233;
+    --footerTopBG: #b4f4e5;
+    --headerBG: rgb(251, 246, 246);
+    --charcoal: #323233;
+    --seafoam: #b4f4e5;
+    --offwhite: rgb(251, 246, 246);
+    --orange: rgba(255, 166, 0, 0.817);
+    --white: white;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%;
+    grid-template-rows: 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%;
 }
 
 
 /*header*/
 
-header {}
+header {
+    background-color: var(--white);
+    font-size: 1.5rem;
+}
 
 
 /* header unordered list */
 
 header ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -26,7 +42,7 @@ header ul {
 .logo {}
 
 body {
-    background-color: #323233;
+    background-color: var(--offwhite);
 }
 
 
@@ -37,7 +53,7 @@ body {
 
 /* main picture div */
 
-.main.picture img {}
+.main .picture img {}
 
 
 /* about div */
@@ -72,7 +88,9 @@ body {
 
 /* footer */
 
-footer {}
+footer {
+    background-color: var(--footerTopBG);
+}
 
 
 /*phone number in the footer */
