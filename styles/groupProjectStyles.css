@@ -25,17 +25,8 @@
 
 header {
     background-color: var(--white);
-    font-size: 1.5rem;
+    font-size: 2rem;
     border: 1px solid black;
-}
-
-
-/* header unordered list */
-
-header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
 }
 
 
@@ -44,6 +35,22 @@ header ul {
 .logo img {
     width: 6rem;
     border-radius: 100%;
+}
+
+
+/* home button */
+
+.homebtn {
+    width:
+}
+
+
+/* header unordered list */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 body {
