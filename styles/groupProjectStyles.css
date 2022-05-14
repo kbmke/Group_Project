@@ -51,12 +51,22 @@ body {
 }
 
 
-/* main container div */
+/* -homepage- main container div */
 
 .main {}
 
 
-/* main picture div */
+/* -online ordering- main container div */
+
+.main-ordering {}
+
+
+/* -online ordering- link to order pies */
+
+.order {}
+
+
+/* -online ordering- main picture id */
 
 #tblpies {
     width: 30%;
@@ -64,32 +74,32 @@ body {
 }
 
 
-/* about div */
+/* -homepage- about div */
 
 .about {}
 
 
-/* about pic div */
+/* -homepage- about pic div */
 
 .about.pic img {}
 
 
-/* about div with words */
+/* -homepage- about div with words */
 
 .about p {}
 
 
-/* events div with words */
+/* -homepage- events div with words */
 
 .events img {}
 
 
-/* feedback div with pic */
+/* -homepage- feedback div with pic */
 
 .feedback img {}
 
 
-/* feed back with words */
+/* -hompage- feed back with words */
 
 .feedback p {}
 
