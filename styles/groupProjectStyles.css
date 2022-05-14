@@ -11,22 +11,28 @@
     --charcoal: #323233;
     --seafoam: #b4f4e5;
     --offwhite: rgb(251, 246, 246);
-    --orange: rgba(255, 166, 0, 0.817);
+    --accentColor: #ff9615;
+    rgba(255, 166, 0, 0.817);
     --white: white;
     font-size: 10px;
+}
+
+html {
     display: grid;
     /* todo I messed up the numbers in the temp below so will need to fix it later  */
-    grid-template-columns: 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%, 8.33%;
-    grid-template-rows: 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%, 10%;
+    grid-template-columns: 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%;
+    grid-template-rows: 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%;
 }
 
 
 /*header*/
 
 header {
+    display: grid;
     background-color: var(--white);
     font-size: 1.5rem;
-    border: 1px solid black;
+    grid-column: 1 / 12;
+    grid-row: 1;
 }
 
 
@@ -34,8 +40,7 @@ header {
 
 header ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
+    display: grid;
 }
 
 
@@ -47,6 +52,7 @@ header ul {
 }
 
 body {
+    display: grid;
     background-color: var(--offwhite);
 }
 
@@ -58,10 +64,13 @@ body {
 
 /* -online ordering- main container div */
 
-.main-ordering {}
+.main-ordering {
+    grid-column: 9/10;
+    grid-row: border: 1px solid black;
+}
 
 
-/* -online ordering- link to order pies */
+/* -online ordering- hyperlink to order pies */
 
 .order {}
 
@@ -69,8 +78,21 @@ body {
 /* -online ordering- main picture id */
 
 #tblpies {
-    width: 30%;
+    width: 22rem;
     display: grid;
+    grid-row: 3 / 5;
+    border-radius: 20px;
+}
+
+
+/* -online ordering- order div */
+
+.order a {
+    font-size: 4rem;
+    /* removed the line below the hyperlink */
+    text-decoration: none;
+    text-align: center;
+    color: var(--accentColor);
 }
 
 
@@ -108,25 +130,30 @@ body {
 
 footer {
     background-color: var(--footerTopBG);
+    display: grid;
+    grid-column: 1 / 12;
+    grid-row: 9 / 12;
+    font-size: 1.5rem;
 }
-
-
-/*phone number in the footer */
-
-
-/* todo */
 
 
 /* address in the footer  */
 
-footer address {}
+.address {}
 
 
 /* div for the hours in the footer */
 
-.hours {}
+.hours {
+    list-style: none;
+}
 
 
-/* div for the copyright icon in the footer */
+/* copyright icon in the footer */
 
-.copyright {}
+.copyright {
+    width: 75%;
+    display: flex;
+    margin: 1rem auto;
+    text-align: center;
+}
