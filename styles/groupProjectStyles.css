@@ -11,40 +11,87 @@
         --charcoal: #323233;
         --seafoam: #b4f4e5;
         --offwhite: rgb(251, 246, 246);
-        --orange: rgba(255, 166, 0, 0.817);
         --white: white;
+        --footerBottomBG: #323233;
+        --footerTopBG: #b4f4e5;
+        --headerBG: rgb(251, 246, 246);
+        --accentColor: #ff9615;
+        rgba(255, 166, 0, 0.817);
         font-size: 10px;
+    }
+    
+    html {
         display: grid;
-        /* todo I messed up the numbers in the temp below so will need to fix it later  */
-        grid-template-columns: auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto, auto;
+        grid-template-columns: repeat (12, 18.8%);
+        grid-template-rows: repeat (12, 18.8%);
     }
     /*header*/
     
     header {
-        background-color: var(--white);
         font-size: 2rem;
         border: 1px solid black;
+        grid-row: 1/2;
+        grid-column: 1/12;
+        width: 100%;
+        display: flex;
+        /* pushing the items to the right */
+        justify-content: flex-end;
+        /* vertically align-items to the center */
+        justify-items: center;
+        color: var(--accentColor);
+        padding: 30px 5%;
+        font-family: 'Koulen', cursive;
+        background-color: var(--charcoal);
+    }
+    /* logo box */
+    
+    .logo {
+        /* push the logo back to the left side of the page */
+        margin-right: auto;
     }
     /* logo in the header */
     
     .logo img {
-        width: 6rem;
+        width: 8rem;
         border-radius: 100%;
     }
     /* home button */
-    
-    .homebtn {
-        width: 2rem;
-    }
+    /* instead of using a button I changed it back to a list item     */
+    /* .homebtn {
+        width: 4rem;
+        display: inline-flex;
+    } */
     /* header unordered list */
     
     nav ul {
         list-style: none;
         display: flex;
         flex-direction: row;
+        line-height: 4;
     }
     
-    body {
+    .headerHomebt {
+        width: 6rem;
+        color: var(--accentColor);
+        font-size: 2.5rem;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+    
+    .headerPhone {
+        color: var(--accentColor);
+        font-size: 2.5rem;
+        margin: 0 2em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .headerAdd {
+        color: var(--accentColor);
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    /* body {
         background-color: var(--offwhite);
         width: 100%;
         max-width: 1440px;
@@ -58,24 +105,32 @@
     .main h1 {
         font-size: 15rem;
         text-align: center;
+        margin: 0 auto;
+        color: var(--accentColor);
+        font-family: 'Koulen', cursive;
     }
     /* -homepage- main-pic container */
-    
-    .main .main-picture {
+    /* .main .main-picture {
         display: grid;
         position: relative;
-        grid-column: 4 / 6;
-    }
+        grid-column: 5 / 9;
+    } */
     /* -homepage- main container picture */
     
     .main .main-picture img {
-        width: 81rem;
+        width: 95rem;
+        display: flex;
+        position: relative;
+        border-radius: 2rem;
+        margin: 0 auto;
     }
     /* -online ordering- main picture id */
     
     #tblpies {
         width: 28rem;
         display: grid;
+        border-radius: 20px;
+        grid-column: 4 /8;
     }
     /* -homepage- about div */
     
@@ -84,6 +139,7 @@
     
     .main .about-pic img {
         width: 28rem;
+        border-radius: 2rem;
     }
     /* -homepage- about div with words */
     
@@ -102,14 +158,65 @@
     footer {
         background-color: var(--footerTopBG);
     }
-    /*phone number in the footer */
-    /* todo */
+    /* -online ordering- main picture id */
+    
+    #tblpies {
+        width: 22rem;
+        display: grid;
+        grid-row: 3 / 5;
+        border-radius: 20px;
+    }
+    /* -online ordering- order div */
+    
+    .order a {
+        font-size: 4rem;
+        /* removed the line below the hyperlink */
+        text-decoration: none;
+        text-align: center;
+        color: var(--accentColor);
+    }
+    /* -homepage- about div */
+    
+    .about {}
+    /* -homepage- about pic div */
+    
+    .about.pic img {}
+    /* -homepage- about div with words */
+    
+    .about p {}
+    /* -homepage- events div with words */
+    
+    .events img {}
+    /* -homepage- feedback div with pic */
+    
+    .feedback img {}
+    /* -homepage- feed back with words */
+    
+    .feedback p {}
+    /* footer */
+    
+    footer {
+        background-color: var(--footerTopBG);
+        display: grid;
+        grid-column: 1 / 12;
+        grid-row: 9 / 12;
+        font-size: 1.5rem;
+    }
     /* address in the footer  */
     
-    footer address {}
+    .address {}
     /* div for the hours in the footer */
     
-    .hours {}
-    /* div for the copyright icon in the footer */
+    .hours {
+        list-style: none;
+    }
+    /* copyright icon in the footer */
     
-    .copyright {}
+    .copyright {
+        width: 75%;
+        display: flex;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    
+    */
