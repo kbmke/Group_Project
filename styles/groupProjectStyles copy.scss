@@ -22,76 +22,60 @@
     
     html {
         display: grid;
-        grid-template-columns: repeat (12, 18.8%);
-        grid-template-rows: repeat (12, 18.8%);
+        grid-template-columns: 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%;
+        grid-template-rows: 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%, 18.8%;
+    }
+    
+    // utility class
+    .rel {
+        position: relative;
+    }
+    
+    .frow {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .fcolumn {
+        display: flex;
+        flex-direction: column;
     }
     /*header*/
     
     header {
-        font-size: 1.5rem;
+        background-color: var(--white);
+        font-size: 2rem;
         border: 1px solid black;
         grid-row: 1/2;
         grid-column: 1/12;
         width: 100%;
         display: flex;
-        /* pushing the items to the right */
-        justify-content: flex-end;
-        /* vertically align-items to the center */
-        justify-items: center;
-        color: var(--accentColor);
-        padding: 30px 5%;
-        font-family: 'Koulen', cursive;
-        background-color: var(--charcoal);
+        justify-content: space-between;
+        align-items: center;
+        /* logo in the header */
+        .logo {
+            .logo img {
+                width: 5rem;
+                border-radius: 100%;
+            }
+        }
     }
-    /* logo box */
     
-    .logo {
-        /* push the logo back to the left side of the page */
-        margin-right: auto;
+    .nav {
+        /* home button */
+        .homebtn {
+            width: 4rem;
+        }
     }
-    /* logo in the header */
-    
-    .logo img {
-        width: 8rem;
-        border-radius: 100%;
-    }
-    /* home button */
-    /* instead of using a button I changed it back to a list item     */
-    /* .homebtn {
-        width: 4rem;
-        display: inline-flex;
-    } */
     /* header unordered list */
     
     nav ul {
         list-style: none;
         display: flex;
         flex-direction: row;
-        line-height: 4;
     }
     
-    .headerHomebt {
-        width: 6rem;
-        color: var(--accentColor);
-        font-size: 2.5rem;
-        margin: 0 1rem;
-        font-weight: bold;
-    }
-    
-    .headerPhone {
-        color: var(--accentColor);
-        font-size: 2.5rem;
-        margin: 0 2em;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    
-    .headerAdd {
-        color: var(--accentColor);
-        font-size: 2.5rem;
-        font-weight: bold;
-    }
-    /* body {
+    body {
         background-color: var(--offwhite);
         width: 100%;
         max-width: 1440px;
@@ -102,33 +86,26 @@
     /* -homepage= main container */
     /* -homepage- main container heading */
     
-    .main {
-        display: grid;
-        grid-template-columns: repeat (12, 18.8%);
-        grid-template-rows: repeat (12, 18.8%);
-    }
-    
     .main h1 {
         font-size: 15rem;
         text-align: center;
-        margin: 0 auto;
-        color: var(--accentColor);
-        font-family: 'Koulen', cursive;
+        display: flex;
+        border: 1px solid black;
     }
     /* -homepage- main-pic container */
-    /* .main .main-picture {
+    
+    .main .main-picture {
         display: grid;
         position: relative;
-        grid-column: 5 / 9;
-    } */
+        grid-column: 4 / 6;
+    }
     /* -homepage- main container picture */
     
     .main .main-picture img {
-        width: 95rem;
-        display: flex;
+        width: 81rem;
+        display: grid;
+        grid-column: 10;
         position: relative;
-        border-radius: 2rem;
-        margin: 0 auto;
     }
     /* -online ordering- main picture id */
     
@@ -140,41 +117,18 @@
     }
     /* -homepage- about div */
     
-    .main .about {}
+    .main .about {
+        .main .about-pic img {
+            width: 28rem;
+        }
+    }
     /* -homepage- about pic div */
-    
-    .main .about-pic img {
-        width: 28rem;
-        border-radius: 2rem;
-    }
     /* -homepage- about div with words */
-    
-    .about h2 {
-        color: var(--accentColor);
-        font-size: 3rem;
-        font-family: 'Koulen', cursive;
-    }
     
     .about p {}
     /* -homepage- events div with words */
     
-    .events h2 {
-        font-size: 3rem;
-        font-family: 'Koulen', cursive;
-        color: var(--accentColor);
-    }
-    
-    .events.pic {
-        display: flex;
-        position: relative;
-        /* justify-content: ; */
-        grid-column: 6/9;
-    }
-    
-    .events img {
-        width: 28rem;
-        border-radius: 2rem;
-    }
+    .events img {}
     /* -homepage- feedback div with pic */
     
     .feedback img {}
@@ -182,6 +136,11 @@
     
     .feedback p {}
     /* footer */
+    
+    // contact page main header
+    .contact-header h1 {
+        font-size: 6rem;
+    }
     
     footer {
         background-color: var(--footerTopBG);
@@ -205,7 +164,9 @@
     }
     /* -homepage- about div */
     
-    .about {}
+    .about h2 {
+        font-size: 2rem;
+    }
     /* -homepage- about pic div */
     
     .about.pic img {}
