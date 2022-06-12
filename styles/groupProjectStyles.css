@@ -143,7 +143,11 @@
     }
     /* -homepage- about div with words */
     
-    .about p {}
+    .about h2 {
+        font-size: 40px;
+    }
+    
+    .about-pic {}
     /* -homepage- events div with words */
     
     .events img {}
