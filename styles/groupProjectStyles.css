@@ -140,17 +140,22 @@
     .main .about-pic img {
         width: 28rem;
         border-radius: 2rem;
+        margin: 1rem 0 1rem 100rem;
     }
     /* -homepage- about div with words */
     
-    .about h2 {
+    .about-head h2 {
         font-size: 40px;
+        margin-left: 6rem;
     }
     
     .about-pic {}
     /* -homepage- events div with words */
     
-    .events img {}
+    .events img {
+        width: 28rem;
+        border-radius: 2rem;
+    }
     /* -homepage- feedback div with pic */
     
     .feedback img {}
@@ -161,6 +166,10 @@
     
     footer {
         background-color: var(--footerTopBG);
+    }
+    
+    {
+        display: inline;
     }
     /* -online ordering- main picture id */
     
